@@ -1,5 +1,6 @@
 package com.example.copsbotuserapp.UI
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -10,6 +11,7 @@ import com.example.copsbotuserapp.Models.LoginResponse
 import com.example.copsbotuserapp.R
 import com.google.gson.JsonParser
 import kotlinx.android.synthetic.main.activity_login.*
+import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -39,7 +41,8 @@ class LoginActivity : AppCompatActivity() {
 
                     override fun onResponse(call: Call<LoginResponse>, response: Response<LoginResponse>) {
                         //Toast.makeText(applicationContext,response.toString(),Toast.LENGTH_SHORT).show()
-                       Toast.makeText(applicationContext,response.message().toString(),Toast.LENGTH_SHORT)
+                        Toast.makeText(applicationContext,"response", Toast.LENGTH_SHORT).show()
+                       Toast.makeText(applicationContext,response.body().toString(),Toast.LENGTH_SHORT)
                     }
 
                 })
@@ -51,7 +54,10 @@ class LoginActivity : AppCompatActivity() {
 
         //registration link create account section.
         registration_activity_bypass.setOnClickListener {
-            Toast.makeText(this,"Redirect to Registration activity",Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this,"Redirect to Registration activity",Toast.LENGTH_SHORT).show()
+            intent=Intent(this,RegistrationActivity::class.java)
+            startActivity(intent)
+
         }
 
     }
