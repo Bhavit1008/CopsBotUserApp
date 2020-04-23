@@ -6,13 +6,19 @@ import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
 import android.telephony.TelephonyManager
+import android.util.Log
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.example.copsbotuserapp.API.RetrofitClient
+import com.example.copsbotuserapp.models.RegistrationResponse
 import com.example.copsbotuserapp.R
 import kotlinx.android.synthetic.main.activity_registration.*
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 
 class RegistrationActivity : AppCompatActivity() {
@@ -42,5 +48,27 @@ class RegistrationActivity : AppCompatActivity() {
             4->{SLOT.text = "DATA_SUSPENDED"}
         }
         SIM.text = operatorName
+
+        btn_register.setOnClickListener {
+            RetrofitClient.instance.createUser(
+                "Bhavit",
+                "7597917007",
+                IMEI1,
+                "24.576952",
+                "74.257894",
+                "password"
+            ).enqueue(object :Callback<RegistrationResponse>{
+                override fun onFailure(call: Call<RegistrationResponse>, t: Throwable) {
+                    Toast.makeText(applicationContext,"failed" + t.message,Toast.LENGTH_SHORT).show()
+                }
+
+                override fun onResponse(
+                    call: Call<RegistrationResponse>, response: Response<RegistrationResponse>) {
+                    Toast.makeText(applicationContext,"success" +response.body().toString(),Toast.LENGTH_SHORT).show()
+                    Log.d("reg",response.body().toString())
+                }
+
+            })
+        }
     }
 }
