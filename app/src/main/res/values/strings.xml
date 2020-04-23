@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CopsBotUserApp</string>
+    <string name="google_maps_key">AIzaSyC_NBFp9WLbMlUtsxBDy-sQvNRPPTTfMGc</string>
 </resources>
