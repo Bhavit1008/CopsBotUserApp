@@ -1,0 +1,31 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:background="#D3D3D3">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        map:cameraZoom="1"
+        tools:context=".MainActivity"/>
+
+    <Button
+        android:id="@+id/Btn_MapOk"
+        android:layout_width="124dp"
+        android:layout_height="36dp"
+        android:layout_gravity="top"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="32dp"
+        android:text="NEXT"
+        android:textColor="#000"
+        android:textSize="16sp"
+        />
+
+</FrameLayout>

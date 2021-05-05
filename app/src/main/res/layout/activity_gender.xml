@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:background="#fff">
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        tools:context=".ui.chat.MainActivity">
+
+        <com.tomer.fadingtextview.FadingTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:texts="@array/Fade_In"
+            app:timeout="500"
+            android:layout_marginBottom="16dp"
+            android:layout_alignParentBottom="true"
+            android:textSize="12sp"
+            android:textColor="#000"
+            android:id="@+id/txtlogo"
+            />
+
+        <ImageView
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/round_edt"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="80dp"
+            android:layout_above="@+id/txtName"
+            android:layout_height="80dp"
+            android:id="@+id/botLogo"
+            />
+
+        <TextView
+            android:layout_above="@+id/chipGroup"
+            android:layout_width="250dp"
+            android:padding="16dp"
+            android:background="@drawable/bot_bg_bubble"
+            android:layout_height="wrap_content"
+            android:text="@string/genderTextChat"
+            android:textSize="24sp"
+            android:layout_marginBottom="32dp"
+            android:id="@+id/txtName"/>
+
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"
+            android:layout_above="@+id/dots"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chipGroup"
+            android:background="#fafff7"
+            app:singleLine="false"
+            app:singleSelection="true"
+            >
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chipYellow"
+                android:text="@string/maleGenderChatBtn"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                app:chipBackgroundColor="#fff"
+                app:chipStrokeWidth="1dp"
+                android:textColor="@color/colorPrimary"
+                app:chipStrokeColor="@color/colorPrimary"
+                android:textAppearance="@style/chipTextAppearance"
+                />
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chipPink"
+                android:text="@string/femaleGenderChatBtn"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                app:chipBackgroundColor="#fff"
+                app:chipStrokeWidth="1dp"
+                android:textColor="@color/colorPrimary"
+                app:chipStrokeColor="@color/colorPrimary"
+                android:textAppearance="@style/chipTextAppearance"
+                />
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chipGold"
+                android:text="@string/otherGenderChatBtn"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                app:chipBackgroundColor="#fff"
+                app:chipStrokeWidth="1dp"
+                android:textColor="@color/colorPrimary"
+                app:chipStrokeColor="@color/colorPrimary"
+                android:textAppearance="@style/chipTextAppearance"
+                />
+
+
+        </com.google.android.material.chip.ChipGroup>
+
+
+        <com.sasank.roundedhorizontalprogress.RoundedHorizontalProgressBar
+            android:id="@+id/progress_bar_gender"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:indeterminate="false"
+            android:maxHeight="4dp"
+            android:minHeight="4dp"
+            app:backgroundColor="#fff"
+            app:progressColor="@color/colorAccent"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/oswaldlight"/>
+
+        <com.eyalbira.loadingdots.LoadingDots
+            android:id="@+id/dots"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp"
+            app:LoadingDots_dots_color="@color/colorPrimary"
+            app:LoadingDots_auto_play="true"
+            app:LoadingDots_dots_count="4"
+            app:LoadingDots_loop_duration="800"
+            app:LoadingDots_loop_start_delay="100"
+            app:LoadingDots_jump_duration="200"
+            app:LoadingDots_jump_height="4dp"
+            app:LoadingDots_dots_size="2dp"
+            android:layout_alignParentBottom="true"
+            />
+
+
+    </RelativeLayout>
+</ScrollView>

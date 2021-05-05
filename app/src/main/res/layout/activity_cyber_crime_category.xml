@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <RelativeLayout
+        android:background="#fff"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        tools:context=".ui.chat.awarness.CyberCrimeCategory">
+
+
+        <ImageView
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="16dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="80dp"
+            android:layout_above="@+id/txtCrimeCategory"
+            android:layout_height="80dp"
+            android:id="@+id/botLogo"
+            />
+
+        <TextView
+            android:padding="16dp"
+            android:background="@drawable/bot_bg_bubble"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Choose one for more information"
+            android:id="@+id/txtCrimeCategory"
+            android:textSize="24sp"
+            android:layout_marginBottom="32dp"
+            android:layout_above="@id/chipGroupCyberCrimeCategory"/>
+
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_marginBottom="16dp"
+            android:layout_above="@+id/txtAwarnessCyberCrimeCategory"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/chipGroupCyberCrimeCategory"
+            android:background="#fff"
+            app:singleLine="false"
+            app:singleSelection="true"
+            app:chipBackgroundColor="#fff"
+            app:chipStrokeWidth="1dp"
+            app:chipStrokeColor="@color/colorAccent"
+            >
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chipRed"
+                android:text="Cyber Bullying"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                app:chipBackgroundColor="#fff"
+                app:chipStrokeWidth="1dp"
+                android:textColor="@color/colorPrimary"
+                app:chipStrokeColor="@color/colorPrimary"
+                android:textAppearance="@style/chipTextAppearance"
+                />
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chipGreen"
+                android:text="Online Job Fraud"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                app:chipBackgroundColor="#fff"
+                app:chipStrokeWidth="1dp"
+                android:textColor="@color/colorPrimary"
+                app:chipStrokeColor="@color/colorPrimary"
+                android:textAppearance="@style/chipTextAppearance"
+                />
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chipBlue"
+                android:text="Vishing"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                app:chipBackgroundColor="#fff"
+                app:chipStrokeWidth="1dp"
+                android:textColor="@color/colorPrimary"
+                app:chipStrokeColor="@color/colorPrimary"
+                android:textAppearance="@style/chipTextAppearance"
+                />
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chipYellow"
+                android:text="Sim Swap Scam"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                app:chipBackgroundColor="#fff"
+                app:chipStrokeWidth="1dp"
+                android:textColor="@color/colorPrimary"
+                app:chipStrokeColor="@color/colorPrimary"
+                android:textAppearance="@style/chipTextAppearance"
+                />
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chipPink"
+                android:text="Debit / Credit Card Fraud"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                app:chipBackgroundColor="#fff"
+                app:chipStrokeWidth="1dp"
+                android:textColor="@color/colorPrimary"
+                app:chipStrokeColor="@color/colorPrimary"
+                android:layout_marginBottom="32dp"
+                android:textAppearance="@style/chipTextAppearance"
+                />
+        </com.google.android.material.chip.ChipGroup>
+
+
+
+        <com.sasank.roundedhorizontalprogress.RoundedHorizontalProgressBar
+            android:id="@+id/progress_bar_category"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:indeterminate="false"
+            android:maxHeight="4dp"
+            android:minHeight="4dp"
+            app:backgroundColor="#fff"
+            app:progressColor="@color/colorAccent"
+            android:layout_alignParentTop="true"/>
+
+
+
+<TextView
+    android:padding="16dp"
+    android:background="@drawable/bot_bg_bubble"
+    android:layout_width="250dp"
+    android:textSize="16sp"
+    android:layout_marginBottom="4dp"
+    android:visibility="invisible"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/chipGroupOptions"
+    android:id="@+id/txtAwarnessCyberCrimeCategory"/>
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_marginBottom="16dp"
+            android:layout_above="@+id/dots"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/chipGroupOptions"
+            android:background="#fafff7"
+            app:singleLine="false"
+            app:singleSelection="true"
+            android:visibility="invisible"
+            app:chipBackgroundColor="#fff"
+            app:chipStrokeWidth="1dp"
+            app:chipStrokeColor="@color/colorAccent"
+            >
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chipCall"
+                android:text="Emergency Call"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                app:chipBackgroundColor="#fff"
+                app:chipStrokeWidth="1dp"
+                android:textColor="@color/colorPrimary"
+                app:chipStrokeColor="@color/colorPrimary"
+                />
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chipSafety"
+                android:text="Safety Measures"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                app:chipBackgroundColor="#fff"
+                app:chipStrokeWidth="1dp"
+                android:textColor="@color/colorPrimary"
+                app:chipStrokeColor="@color/colorPrimary"
+                />
+
+        </com.google.android.material.chip.ChipGroup>
+
+
+        <com.eyalbira.loadingdots.LoadingDots
+            android:id="@+id/dots"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            app:LoadingDots_dots_color="@color/colorPrimary"
+            app:LoadingDots_auto_play="true"
+            app:LoadingDots_dots_count="4"
+            app:LoadingDots_loop_duration="800"
+            app:LoadingDots_loop_start_delay="100"
+            app:LoadingDots_jump_duration="200"
+            app:LoadingDots_jump_height="4dp"
+            app:LoadingDots_dots_size="2dp"
+            />
+
+
+    </RelativeLayout>
+</ScrollView>

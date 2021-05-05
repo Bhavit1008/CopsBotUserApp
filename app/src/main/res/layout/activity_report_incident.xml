@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".features.ReportIncidentActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@+id/imageView"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter short description here :-"
+        android:id="@+id/txtDesc"
+        android:layout_below="@+id/imageView"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter incident"
+        android:layout_below="@id/txtDesc"
+        android:layout_margin="8dp"
+        android:textSize="20sp"
+        android:id="@+id/edtIncidentDesc"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:id="@+id/btnIncidentSend"
+        android:layout_below="@+id/edtIncidentDesc"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retake"
+        android:id="@+id/btnIncidentRetake"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="4dp"
+        />
+
+</RelativeLayout>

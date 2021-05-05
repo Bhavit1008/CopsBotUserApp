@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".ui.chat.awarness.CyberCrimeSafetyMeasures">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/round_edt"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:civ_shadow="true"
+        android:layout_above="@+id/txtSafety"
+        app:civ_shadow_radius="10dp"
+        app:civ_shadow_color="#fff"
+        android:src="@drawable/police"
+        android:id="@+id/botLogo"
+        />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="1. Talk to your children \n 2. Never click suspicious links or attachments\n 3. Set Secure browser settings\n 4. Secure your online presence just like you secure yourself\n 5. Be mindful of your appearance on video chat  video calls\n 6. Protect yourself from Cyberstalking \n7. Beware of fake social media accounts- Not all the accounts are real and not all information provided on accounts are true\n 9.Report if you find content related to of Child Pornography (CP)/Child Sexual Abuse Material (CSAM) or sexually explicit material
+"
+        android:padding="16dp"
+        android:background="@drawable/bot_bg_bubble"
+        android:id="@+id/txtSafety"
+        android:layout_above="@+id/richLinkView"
+        />
+    <io.github.ponnamkarthik.richlinkpreview.RichLinkView
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dots"
+        android:layout_width="250dp"
+        android:backgroundTint="#F9F4F3"
+        android:id="@+id/richLinkView"/>
+
+    <com.eyalbira.loadingdots.LoadingDots
+        android:id="@+id/dots"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:LoadingDots_dots_color="@color/colorPrimary"
+        app:LoadingDots_auto_play="true"
+        app:LoadingDots_dots_count="4"
+        app:LoadingDots_loop_duration="800"
+        app:LoadingDots_loop_start_delay="100"
+        app:LoadingDots_jump_duration="200"
+        app:LoadingDots_jump_height="4dp"
+        app:LoadingDots_dots_size="2dp"
+        android:layout_alignParentBottom="true"
+        />
+    <com.google.android.material.chip.Chip
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegister"
+        android:text="Crime Registration"
+        android:layout_alignParentRight="true"
+        app:chipBackgroundColor="#fff"
+        app:chipStrokeWidth="1dp"
+        android:textColor="@color/colorPrimary"
+        app:chipStrokeColor="@color/colorPrimary"
+        android:layout_margin="4dp"
+        android:textAppearance="@style/chipTextAppearance"/>
+
+</RelativeLayout>

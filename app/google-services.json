@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "305697920465",
+    "firebase_url": "https://newchatui.firebaseio.com",
+    "project_id": "newchatui",
+    "storage_bucket": "newchatui.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305697920465:android:d316a153e31ccf5468fcf0",
+        "android_client_info": {
+          "package_name": "com.example.newchatui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "305697920465-db1giuh4av1uf5petjt0kcp97q97e287.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2J-NDWvQKK-IAnQbsE7PPwqegtPIyRuQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "305697920465-db1giuh4av1uf5petjt0kcp97q97e287.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

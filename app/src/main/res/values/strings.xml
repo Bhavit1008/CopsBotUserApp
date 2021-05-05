@@ -1,4 +1,60 @@
 <resources>
-    <string name="app_name">CopsBotUserApp</string>
+    <string name="app_name" translatable="false">NewChatUI</string>
+
+    <string-array name="Fade_In">
+        <item>CopsBot</item>
+        <item>At your Service</item>
+    </string-array>
+
     <string name="google_maps_key">AIzaSyC_NBFp9WLbMlUtsxBDy-sQvNRPPTTfMGc</string>
+    <string name="introScreenText">Hello I m CopsBot, how may I help you?</string>
+    <string name="ageTextChat">What’s your age?</string>
+    <string name="complaintsdetailChat">Your Complaint has been succesfully registered</string>
+    <string name="crimeCategoryTextChat">Select the category under which you want to register the complaint.</string>
+    <string name="landmarkTextChat">Select the Place of the incident.</string>
+    <string name="dateTextChat">Select Date of incident.</string>
+    <string name="descriptionTextChat">Describe the incident.</string>
+    <string name="genderTextChat">Select Your Gender.</string>
+    <string name="nameTextChat">What’s your name?</string>
+    <string name="sendBtnChat">send</string>
+    <string name="maleGenderChatBtn">Male</string>
+    <string name="femaleGenderChatBtn">Female</string>
+    <string name="otherGenderChatBtn">Other</string>
+    <string name="theftCategory">Theft</string>
+    <string name="murderCategory">Murder</string>
+    <string name="molestationCategory">molestation</string>
+    <string name="domestic_violenceCategory">Domestic Violence</string>
+    <string name="cyber_crimeCategory">Cyber Crime</string>
+    <string name="hit_and_runCategory">Hit and Run</string>
+    <string name="acid_attackCategory">Acid Attack</string>
+    <string name="kidnappCategory">Kidnapp</string>
+    <string name="rapeCategory">Rape</string>
+    <string name="copsbotHeadingDashboard">CopsBot</string>
+    <string name="sosDashboard">SOS</string>
+    <string name="chatbotDashboard">ChatBot</string>
+    <string name="status_trackingDashboard">Status Tracking</string>
+    <string name="alertsDashboard">Alerts</string>
+    <string name="report_incidentDashboard">Report Incident</string>
+    <string name="twitter_feedsDashboard">Twitter Feeds</string>
+    <string name="nearby_police_stationsDashboard">Nearby Police Stations</string>
+
+    <string name="selected_item" translatable="false">Selected item:</string>
+    <string name="sexual_harassmentCategory">sexual_harassmentCategory</string>
+    <string name="crime_registraionIntroChip">Crime Registraion</string>
+    <string name="crime_awarnessIntroChip">Crime Awarness</string>
+    <string name="full_nameMainActivityEdt">Full Name</string>
+    <string name="ageAgeEdt">Age</string>
+    <string name="descriptionDescriptionEdt">Description</string>
+    <string name="enter_locationDateLocEdt">Enter Location</string>
+    <string name="phone_numberLogin">Phone Number</string>
+    <string name="passwordLogin">Password</string>
+    <string name="speek">speak</string>
+    <string name="childerSfetyAwarenessPoint">1. Encourage your children to use the buddy system – walk and play with friends or classmates.\n2. Never talk to strangers (unless they’re designated “safe,” like police)\n3. Help your children understand that no one, not even a relative or authority figure, is allowed to touch them in a way that makes them uncomfortable.\n 4. Help your child learn their full name, phone number (including area code), and address (including city and state).\n 5. Teach children how to call 911 (and when it’s appropriate).\n 6. Designate a safe spot in your neighborhood to go to in case of emergency.</string>
+
+    <string-array name="Languages">
+        <item>English</item>
+        <item>Hindi</item>
+        <item>Gujrati</item>
+        <item>Punjabi</item>
+    </string-array>
 </resources>

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "crimeprediction-uobe",
+  "private_key_id": "afad08373458ca39472c3761d4f2c9abd3e096aa",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDFmZ5DFbctsZ9D\nsdIHaYBjBKJuE/sjC2y0XY0LwKKsJ6U8Phefmg4BCmp6wXcjAMR+S1SwZY388TuB\nz0sisuXq/UGe0uLQFEVBucrcUONJcSejtNZ2qGgZLVtxN9ZNJNbqkmmAQqjSyCdp\nMmVZ7d3a/97YfV11uNT8uSeFRen5gjxsQbdlbqWKSMJLdZgeVD1Wx0eC811akRw0\nLz8mGLTtaxsQ+Z8za52Or0o0fR2mvnw14n+ZvbgNkdCyFDoVRxyDByogmQGVcvAM\nNlFM5L7JW8tnD+U9MvEgx6ErSzxwl6/A/iRu2+VR0crLl6C5KVD788E31QnCMwby\nnU/olBlRAgMBAAECggEAAQg8DxD7o6MhjYKjRziiMWI30FK4ZXF3gDsGM+vYra+I\nqcI6m1x8UD2+r/oiENkTLa8KYorVQrSmi+y08W8fy6obqqRiskA42w6zuZI5Qwvy\nmg9QGM8+Y/XxsVYKVN1+uzudOMygVyGGhdfRNwwKtEx73IOjIQH10trLaGMkxWc0\nvHnyUFrKna++5dIxpD6nPmc+Ey7ReH6J5BEz3tGJ42oxBU+jmOX0hDXWokvK/ONc\nY2qFkYAL8CL7vrnjaxWDQTp230T07Sdvh53pePP6l3Aq4oYQC0g+id2iDYMdzhuV\n/qzK/VdIhDVo/kLG+2fBWL8iao5/H3eCwACBAMjMAQKBgQDnoR1H/7d9VfcfIXRz\nAZASldS+krAcwHve15TVeH3rWlCMDVykRvKDP9uj0rDK+39Zr7LoOEAgrsKpugX8\nyuNGtGEwOd5Q0jqSHdaa9IklvbRjSKEk+m7DKYle7AkjHghSA4nWKKD980d5TJRL\nynmYQIRi7aJr22HilSNbYZ2OkQKBgQDaY+6/73uagtFTOSQx/uH2nS//Bgdv+osb\nAgxgMKn2el3I96dEzeX5CASfjRnh/P7dpKn+j+S15LnNssiVzU7kdV7b8FRX8JDY\nSIdHhWMqzkO04CeIqj80HYCgHPtRfWQqcdXFkwzlQa4P71skcAErRSuxxuXVBIE2\nrU1VBzy+wQKBgQCvoaXPOyHJoo5gB4EB1zSEMyH+YsGw+26xeOu8tcFc3L1ohJUz\nZyxpwtjrLk2pi+tzeNsCY+yUG481HP1/QeP1b76lz6s3w0BwHLnmAvefK2oFQkQW\nAuJLj0o/NGB1RUdv0IkKXwI7rOUMH7nugheTD5CSZreaat2c7hLCLpFGUQKBgEWy\nDLieQfEOfKU1oDKAaDae9XlKwEbhS1GENtTf0u4BITsIpg4UM6dlAqy0iCUR63hq\nm4HNBC10YEOgIdmE2v+X4X0JVrF16ZPMmbeefwZjK0JnIta/lkoYfDsc5Kud+8B7\n8cAK7NuhOV6GgazAPe9ENOyYUDLKLD550isnkyBBAoGAIymlVKszr8VrHWsK44gS\nmAwN+mqtSowKDIuexzyAoauC+cV5YRozgINTV34SonFefPour2DDfqeodlnByd18\nUembwoBD+PrRnd03ak4qxPUNUkDibw9nAMWX4WKDNub5XDrNmj/3VssOzz6lz3zF\nWbGe4V/R4csXIjfRqjJ5A3w=\n-----END PRIVATE KEY-----\n",
+  "client_email": "dialogflow-sfnvtx@crimeprediction-uobe.iam.gserviceaccount.com",
+  "client_id": "112027044396564490876",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dialogflow-sfnvtx%40crimeprediction-uobe.iam.gserviceaccount.com"
+}

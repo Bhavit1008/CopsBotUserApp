@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="#fff"
+    tools:context=".ui.chat.awarness.WomenSafety">
+
+    <ImageView
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="8dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/botLogo"
+        android:layout_above="@+id/txtWomenSafety"
+        />
+
+    <TextView
+        android:layout_margin="4dp"
+        android:background="@drawable/bot_bg_bubble"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtWomenSafety"
+        android:padding="8dp"
+        android:text="1. Educate yourself on violence against women; learn the facts and the prevalence\n 2. Speak out against all forms of violence\n 3. Notice when someone invades your boundaries"
+        android:layout_above="@+id/richLinkView"
+        />
+
+    <com.google.android.material.chip.Chip
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="4dp"
+        android:text="Emergency Call"
+        android:layout_marginTop="8dp"
+        app:chipBackgroundColor="#fff"
+        app:chipStrokeWidth="1dp"
+        android:textColor="@color/colorPrimary"
+        app:chipStrokeColor="@color/colorPrimary"
+        android:id="@+id/chipEmergencyWomen"
+        android:textAppearance="@style/chipTextAppearance"/>
+
+    <io.github.ponnamkarthik.richlinkpreview.RichLinkView
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dots"
+        android:layout_width="250dp"
+        android:backgroundTint="#F9F4F3"
+        android:id="@+id/richLinkView"/>
+
+    <com.eyalbira.loadingdots.LoadingDots
+        android:id="@+id/dots"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        app:LoadingDots_dots_color="@color/colorPrimary"
+        app:LoadingDots_auto_play="true"
+        app:LoadingDots_dots_count="4"
+        app:LoadingDots_loop_duration="800"
+        app:LoadingDots_loop_start_delay="100"
+        app:LoadingDots_jump_duration="200"
+        app:LoadingDots_jump_height="4dp"
+        app:LoadingDots_dots_size="2dp"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

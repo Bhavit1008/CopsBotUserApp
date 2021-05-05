@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:background="#fff"
+        tools:context=".ui.chat.awarness.CrimePrediction">
+
+        <com.tomer.fadingtextview.FadingTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:texts="@array/Fade_In"
+            app:timeout="500"
+            android:layout_marginBottom="16dp"
+            android:layout_alignParentBottom="true"
+            android:textSize="12sp"
+            android:textColor="#000"
+            android:id="@+id/txtlogo"
+            />
+
+
+        <ImageView
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="16dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="80dp"
+            android:layout_above="@+id/txtName"
+            android:layout_height="80dp"
+            android:id="@+id/botLogo"
+            />
+
+        <TextView
+            android:layout_above="@+id/textFieldAge"
+            android:layout_width="250dp"
+            android:padding="16dp"
+            android:layout_height="wrap_content"
+            android:text="please enter your query?"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/bot_bg_bubble"
+            android:textSize="24sp"
+            android:id="@+id/txtName"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textFieldAge"
+            android:layout_above="@+id/btnQuery"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Query"
+            android:textColorHint="@color/colorPrimary"
+            app:boxStrokeColor="@color/colorPrimary"
+            app:errorEnabled="true"
+            android:layout_alignParentRight="true"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtQuery"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sendBtnChat"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/btnQuery"
+            android:layout_alignParentRight="true"
+            app:chipBackgroundColor="#fff"
+            app:chipStrokeWidth="1dp"
+            android:layout_above="@+id/dots"
+            android:textColor="@color/colorPrimary"
+            app:chipStrokeColor="@color/colorPrimary"
+            android:textAppearance="@style/chipTextAppearance"/>
+
+
+        <com.sasank.roundedhorizontalprogress.RoundedHorizontalProgressBar
+            android:id="@+id/progress_bar_age"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:indeterminate="false"
+            android:maxHeight="4dp"
+            android:minHeight="4dp"
+            app:backgroundColor="#fff"
+            app:progressColor="@color/colorAccent"
+            android:layout_alignParentTop="true"/>
+
+        <com.eyalbira.loadingdots.LoadingDots
+            android:id="@+id/dots"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp"
+            app:LoadingDots_dots_color="@color/colorPrimary"
+            app:LoadingDots_auto_play="true"
+            app:LoadingDots_dots_count="4"
+            app:LoadingDots_loop_duration="800"
+            app:LoadingDots_loop_start_delay="100"
+            app:LoadingDots_jump_duration="200"
+            app:LoadingDots_jump_height="4dp"
+            app:LoadingDots_dots_size="2dp"
+            android:layout_alignParentBottom="true"
+            />
+
+
+    </RelativeLayout>
+</ScrollView>
